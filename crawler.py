@@ -88,8 +88,8 @@ if __name__ == '__main__':
             loaded_game = api.match.by_id(SERVER, game_id)
             transformed = transform_game(loaded_game)
             games[game_id] = transformed
-            print(f'{current_count} games collected', flush=True)
             current_count += 1
+            print(f'{current_count} games collected', flush=True)
             # Comment if only checking for a single user
             pending_puuids.update([player['puuid'] for player in transformed['players'] if player['puuid'] not in processed_puuids])
         pending_puuids.remove(puuid)
