@@ -81,7 +81,7 @@ if __name__ == '__main__':
             SERVER, starter_puuid, count=100)
 
         for game_id in player_games:
-            print(f'\r{current_count} games collected', flush=True, end='')
+            print(f'{current_count} games collected', flush=True, end='')
             if game_id in games:
                 continue
             if current_count >= GAME_COUNT:
