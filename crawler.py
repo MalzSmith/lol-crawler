@@ -91,7 +91,7 @@ if __name__ == '__main__':
             games[game_id] = transformed
             current_count += 1
             # Comment if only checking for a single user
-            # pending_puuids.update([player['puuid'] for player in transformed['players'] if player['puuid'] not in processed_puuids])
+            pending_puuids.update([player['puuid'] for player in transformed['players'] if player['puuid'] not in processed_puuids])
         pending_puuids.remove(puuid)
         processed_puuids.add(puuid)
 
