@@ -80,7 +80,7 @@ if __name__ == '__main__':
         
         print(f'Getting games for {puuid}')
         player_games = api.match.matchlist_by_puuid(
-            SERVER, puuid, count=10)
+            SERVER, puuid, count=100)
 
         for game_id in player_games:
             if game_id in games:
