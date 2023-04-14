@@ -2,3 +2,4 @@ riotwatcher
 flatten_json
 pandas
 python-dotenv
+openpyxl
